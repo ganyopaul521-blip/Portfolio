@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Projects | Alex Morgan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html"><span>&lt;/&gt;</span> Alex Morgan</a>
+    <a class="hire-me" href="index.html">Back to site</a>
+  </header>
+
+  <main class="admin-main">
+    <section id="token-gate" class="admin-card">
+      <h2>Admin access</h2>
+      <p class="muted">Paste the admin token printed in the server console (or set with the <code>ADMIN_TOKEN</code> env var).</p>
+      <form id="token-form">
+        <input type="password" id="token-input" placeholder="Admin token" required>
+        <button class="button primary" type="submit">Unlock</button>
+      </form>
+      <p id="token-error" class="error"></p>
+    </section>
+
+    <section id="admin-panel" class="admin-card" hidden>
+      <div class="admin-panel-head">
+        <h2>Project links</h2>
+        <button class="button ghost small" id="lock-button" type="button">Lock</button>
+      </div>
+
+      <form id="project-form" class="project-form">
+        <input type="hidden" id="project-id">
+        <div class="form-row">
+          <label>Title<input type="text" id="field-title" required></label>
+          <label>Category
+            <select id="field-category">
+              <option value="web">Web</option>
+              <option value="mobile">Mobile</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </div>
+        <label>Project URL<input type="url" id="field-url" placeholder="https://..." required></label>
+        <label>Image URL (optional)<input type="url" id="field-image" placeholder="https://..."></label>
+        <label>Description<textarea id="field-description" rows="3"></textarea></label>
+        <div class="form-actions">
+          <button class="button primary" type="submit" id="submit-button">Add project</button>
+          <button class="button ghost" type="button" id="cancel-edit" hidden>Cancel</button>
+        </div>
+      </form>
+      <p id="form-error" class="error"></p>
+
+      <div class="project-list" id="project-list"></div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
