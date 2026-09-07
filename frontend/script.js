@@ -19,6 +19,11 @@ const filterButtons = document.querySelectorAll('#filters button');
 const statProjects = document.querySelector('#stat-projects');
 let projects = [];
 
+function previewImage(project) {
+  if (project.imageUrl) return project.imageUrl;
+  return `https://api.microlink.io/?url=${encodeURIComponent(project.url)}&screenshot=true&meta=false&embed=screenshot.url`;
+}
+
 function renderProjects(filter = 'all') {
   const visible = filter === 'all' ? projects : projects.filter((p) => p.category === filter);
   if (visible.length === 0) {
@@ -29,7 +34,7 @@ function renderProjects(filter = 'all') {
   }
   projectGrid.innerHTML = visible.map((project) => `
     <a class="project-card" href="${project.url}" target="_blank" rel="noreferrer">
-      <div class="project-thumb" style="${project.imageUrl ? `background-image:url('${project.imageUrl}')` : ''}"></div>
+      <div class="project-thumb"><img src="${previewImage(project)}" alt="Preview of ${project.title}" loading="lazy" onerror="this.remove()"></div>
       <div class="project-body">
         <span class="project-category">${project.category}</span>
         <h3>${project.title}</h3>

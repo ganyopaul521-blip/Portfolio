@@ -73,7 +73,8 @@ h1{font-size:clamp(36px,5vw,54px);line-height:1.1;margin:20px 0 18px}
 .project-grid{display:grid;gap:22px;grid-template-columns:repeat(3,1fr)}
 .project-card{background:var(--card);border:1px solid var(--border);border-radius:14px;display:flex;flex-direction:column;overflow:hidden;transition:transform .15s,border-color .15s}
 .project-card:hover{border-color:var(--accent);transform:translateY(-4px)}
-.project-thumb{aspect-ratio:16/10;background:linear-gradient(135deg,var(--accent),var(--accent-2));background-size:cover;background-position:center}
+.project-thumb{aspect-ratio:16/10;background:linear-gradient(135deg,var(--accent),var(--accent-2));overflow:hidden}
+.project-thumb img{display:block;height:100%;object-fit:cover;object-position:top;width:100%}
 .project-body{padding:18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
 .project-body h3{font-size:17px;margin:0}
 .project-category{color:var(--accent-2);font-family:var(--mono);font-size:11px;text-transform:uppercase}
