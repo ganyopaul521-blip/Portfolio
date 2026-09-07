@@ -1,4 +1,4 @@
-# Alex Morgan Portfolio
+# Paul Ganyo Portfolio (TechEdge Ghana)
 
 - `frontend/` — the portfolio site (dark theme, hero, about, skills, projects, contact).
 - `backend/` — a dependency-free Node server that serves the frontend and a JSON API for your project links, plus an admin page to manage them.
