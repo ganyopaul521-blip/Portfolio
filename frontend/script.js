@@ -39,7 +39,7 @@ function renderProjects(filter = 'all') {
     </a>`).join('');
 }
 
-fetch('/api/projects')
+fetch(`${API_BASE}/api/projects`)
   .then((response) => response.json())
   .then((data) => {
     projects = data;
