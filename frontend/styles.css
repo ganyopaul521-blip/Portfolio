@@ -45,12 +45,9 @@ h1{font-size:clamp(36px,5vw,54px);line-height:1.1;margin:20px 0 18px}
 .stack-icons{display:flex;flex-wrap:wrap;gap:10px}
 .stack-icons span{background:var(--card);border:1px solid var(--border);border-radius:8px;color:var(--muted);font-family:var(--mono);font-size:11px;padding:8px 12px}
 
-.hero-art{position:relative;min-height:340px}
+.hero-art{align-items:center;display:flex;justify-content:center;position:relative;min-height:340px}
 .glow{background:radial-gradient(circle,rgba(108,92,231,.35),transparent 70%);height:420px;position:absolute;right:0;top:-40px;width:420px;z-index:0}
-.code-card{background:var(--card);border:1px solid var(--border);border-radius:14px;margin:auto;max-width:360px;overflow:hidden;position:relative;z-index:1}
-.code-card-head{align-items:center;background:var(--bg-alt);border-bottom:1px solid var(--border);color:var(--muted);display:flex;font-family:var(--mono);font-size:11px;gap:8px;padding:10px 14px}
-.code-card-head span{background:var(--border);border-radius:50%;display:inline-block;height:8px;width:8px}
-.code-card pre{color:#c9cbe0;font-family:var(--mono);font-size:12px;line-height:1.7;margin:0;padding:18px;white-space:pre-wrap}
+.profile-photo{aspect-ratio:4/5;border:1px solid var(--border);border-radius:20px;box-shadow:0 30px 60px -20px rgba(108,92,231,.45);max-width:340px;object-fit:cover;position:relative;width:100%;z-index:1}
 
 .about,.skills,.projects,.contact{margin:auto;max-width:1200px;padding:80px 24px}
 .about h2,.skills h2,.projects h2{font-size:clamp(26px,3.5vw,38px);margin-bottom:36px}
