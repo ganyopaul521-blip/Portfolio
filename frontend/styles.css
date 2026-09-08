@@ -32,7 +32,8 @@ em{color:var(--accent-2);font-style:normal}
 .mobile-nav.open{display:flex}
 .mobile-nav a{color:var(--text);font-weight:600}
 
-.hero{align-items:center;display:grid;gap:40px;grid-template-columns:1.1fr 0.9fr;margin:auto;max-width:1200px;padding:40px 24px 100px}
+.hero{background:linear-gradient(rgba(8,11,22,.88),rgba(8,11,22,.92)),url('images/hero-bg.jpg') center/cover no-repeat}
+.hero-inner{align-items:center;display:grid;gap:40px;grid-template-columns:1.1fr 0.9fr;margin:auto;max-width:1200px;padding:40px 24px 100px}
 .badge{background:var(--card);border:1px solid var(--border);border-radius:999px;color:var(--accent-2);display:inline-block;font-size:12px;font-weight:700;padding:6px 14px}
 h1{font-size:clamp(36px,5vw,54px);line-height:1.1;margin:20px 0 18px}
 .intro{color:var(--muted);font-size:15px;max-width:460px}
@@ -100,7 +101,7 @@ footer a:hover{color:var(--text)}
 @media(max-width:900px){
   .nav,.hire-me{display:none}
   .menu-button{display:block}
-  .hero{grid-template-columns:1fr;padding-top:24px}
+  .hero-inner{grid-template-columns:1fr;padding-top:24px}
   .about-grid{grid-template-columns:1fr}
   .skills-grid{grid-template-columns:repeat(2,1fr)}
   .project-grid{grid-template-columns:1fr 1fr}
