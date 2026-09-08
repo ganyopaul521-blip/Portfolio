@@ -3,7 +3,7 @@
     "id": "ed56c2bd-f3c5-4e77-8ee9-418a95a15983",
     "title": "BudgetMate",
     "category": "web",
-    "description": "",
+    "description": "A personal finance tracker for Ghanaian students, with per-category budgets, spending alerts, visual reports, and an AI assistant for financial advice.",
     "url": "https://budget-mate-lake.vercel.app/dashboard",
     "imageUrl": "",
     "createdAt": "2026-09-07T13:58:40.902Z"
@@ -12,7 +12,7 @@
     "id": "1ed22d7f-f84e-4bb8-8b7a-df16c996afa8",
     "title": "Amor-Regius",
     "category": "web",
-    "description": "",
+    "description": "A ticketing and awards-voting platform for a university event, with QR-coded e-tickets, Mobile Money payments, and an admin dashboard for organizers.",
     "url": "https://amor-regius.vercel.app",
     "imageUrl": "",
     "createdAt": "2026-09-07T13:58:40.814Z"
